@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_android"
+            android:icon="@drawable/ic_android_black_24dp"
+            android:title="Android" />
+        <item
+            android:id="@+id/nav_tutorial"
+            android:icon="@drawable/ic_content_copy_black_24dp"
+            android:title="Tutorials" />
+        <item
+            android:id="@+id/nav_examples"
+            android:icon="@drawable/ic_code_black_24dp"
+            android:title="Examples" />
+        <item
+            android:id="@+id/nav_more_tutorials"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Go to Link"></item>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_logOut"
+                android:icon="@drawable/ic_menu_send"
+                android:title="LogOut" />
+        </menu>
+    </item>
+
+</menu>

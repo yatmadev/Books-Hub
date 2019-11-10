@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.akash.firebasedb.InsideInt2">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+        <TextView
+            android:id="@+id/textView61"
+            android:layout_width="371dp"
+            android:layout_height="40dp"
+            android:fontFamily="serif"
+            android:text="Intent Resolution:"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            android:layout_weight="0.21" />
+        <TextView
+            android:id="@+id/textView62"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="0dp"
+            android:text="Action:"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.55"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <TextView
+            android:id="@+id/textView63"
+            android:layout_width="match_parent"
+            android:layout_height="221dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="0dp"
+            android:text="A string that specifies the generic action to perform (such as view or pick).
+In the case of a broadcast intent, this is the action that took place and is being reported.
+The action largely determines how the rest of the intent is structured—particularly the information that is contained in the data and extras.
+You can specify your own actions for use by intents within your app (or for use by other apps to invoke components in your app), but you usually specify action constants defined by the Intent class or other framework classes. "
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.55"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <TextView
+            android:id="@+id/textView64"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="0dp"
+            android:text="Data:"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.55"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <TextView
+            android:id="@+id/textView65"
+            android:layout_width="350dp"
+            android:layout_height="411dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="0dp"
+            android:text="The URI (a Uri object) that references the data to be acted on and/or the MIME type of that data.
+The type of data supplied is generally dictated by the intent's action.
+For example, if the action is ACTION_EDIT, the data should contain the URI of the document to edit.
+When creating an intent, it's often important to specify the type of data (its MIME type) in addition to its URI.
+For example, an activity that's able to display images probably won't be able to play an audio file, even though the URI formats could be similar.
+Specifying the MIME type of your data helps the Android system find the best component to receive your intent. However, the MIME type can sometimes be inferred from the URI—particularly when the data is a content: URI. A content: URI indicates the data is located on the device and controlled by a ContentProvider, which makes the data MIME type visible to the system.
+To set only the data URI, call setData(). To set only the MIME type, call setType().
+If necessary, you can set both explicitly with setDataAndType()."
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.55"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/textView66"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="0dp"
+            android:text="Category:"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.55"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/textView67"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/int_res"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.55"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+    </LinearLayout>
+</ScrollView>

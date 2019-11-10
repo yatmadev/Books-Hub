@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bnkl"
+    android:orientation="vertical"
+    tools:context="com.example.akash.firebasedb.AddNotice1">
+
+    <EditText
+        android:id="@+id/edit_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edit_descr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/addrecord"
+        android:layout_width="wrap_content"
+        style="@style/editText_style"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:text="Add Record" />
+
+
+</LinearLayout>

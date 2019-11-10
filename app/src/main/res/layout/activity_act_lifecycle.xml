@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context="com.example.akash.firebasedb.ActLifecycle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="354dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="Activity Lifecycle: "
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.017" />
+
+
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="410dp"
+            android:layout_marginBottom="120dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintVertical_bias="0.606"
+            app:srcCompat="@drawable/lcy" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="354dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="Activity Lifecycle Methods: "
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.017" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="347dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.70"
+            android:text="onCreate:	called when activity is first created."
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.523" />
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="347dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.70"
+            android:text="onStart: called when activity is becoming visible to the user."
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.523" />
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="347dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.70"
+            android:text="onResume: called when activity will start interacting with the user."
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.523" />
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="347dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.70"
+            android:text="onPause: called when activity is not visible to the user."
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.523" />
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="347dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.70"
+            android:text="onStop: called when activity is no longer visible to the user."
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.523" />
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="347dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.70"
+            android:text="onRestart	called after your activity is stopped, prior to start."
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.523" />
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="347dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.70"
+            android:text="onDestroy	called before the activity is destroyed."
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.523" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.akash.firebasedb.InsideServiceLifecycle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="349dp"
+            android:layout_height="40dp"
+            android:fontFamily="serif"
+            android:text="Service Lifecycle:"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.526" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="410dp"
+            android:layout_marginBottom="120dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintVertical_bias="0.606"
+            app:srcCompat="@drawable/service_lifecycle" />
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="340dp"
+            android:layout_height="31dp"
+            android:text="onStartCommand():"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginTop="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView8"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.523" />
+
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="153dp"
+            android:text="The system invokes this method by calling startService() when another component (such as an activity) requests that the service be started.
+When this method executes, the service is started and can run in the background indefinitely.
+If you implement this, it is your responsibility to stop the service when its work is complete by calling stopSelf() or stopService().
+If you only want to provide binding, you don't need to implement this method"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.523" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="278dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="0dp"
+            android:text="onBind():"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.523"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="126dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="0dp"
+            android:text="The system invokes this method by calling bindService() when another component wants to bind with the service (such as to perform RPC).
+In your implementation of this method, you must provide an interface that clients use to communicate with the service by returning an IBinder.
+You must always implement this method; however, if you don't want to allow binding, you should return null."
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.523"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_weight="0.25" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="335dp"
+            android:layout_height="30dp"
+            android:text="onCreate():"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.523" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="The system invokes this method to perform one-time setup procedures when the service is initially created (before it calls either onStartCommand() or onBind()).
+ If the service is already running, this method is not called."
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.523"
+            android:layout_weight="0.33" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="348dp"
+            android:layout_height="35dp"
+            android:text="onDestroy():"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.523" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The system invokes this method when the service is no longer used and is being destroyed.
+Your service should implement this to clean up any resources such as threads, registered listeners, or receivers.
+This is the last call that the service receives."
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.523" />
+    </LinearLayout>
+
+</ScrollView>

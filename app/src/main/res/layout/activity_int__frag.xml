@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.akash.firebasedb.Int_Frag">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/inds"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+
+            <Button
+                android:id="@+id/button22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="35dp"
+                android:background="@android:color/transparent"
+                android:paddingRight="110dp"
+                android:text="What is Intent ?"
+                android:textColor="@android:color/background_light"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+
+
+            <Button
+                android:id="@+id/button23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="35dp"
+                android:background="@android:color/transparent"
+                android:paddingRight="95dp"
+                android:text="Intent Resolution"
+                android:textColor="@android:color/background_light"
+                android:textSize="18dp"
+                tools:layout_editor_absoluteX="121dp"
+                tools:layout_editor_absoluteY="131dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+
+
+
+            <Button
+                android:id="@+id/button24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="35dp"
+                android:background="@android:color/transparent"
+                android:paddingRight="92dp"
+                android:text="Fragments in java"
+                android:textColor="@android:color/background_light"
+                android:textSize="18dp"
+                tools:layout_editor_absoluteX="121dp"
+                tools:layout_editor_absoluteY="230dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+
+
+
+            <Button
+                android:id="@+id/button25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="35dp"
+                android:background="@android:color/transparent"
+                android:paddingRight="100dp"
+                android:text="Fragments in XML"
+                android:textColor="@android:color/background_light"
+                android:textSize="18dp"
+                tools:layout_editor_absoluteX="111dp"
+                tools:layout_editor_absoluteY="324dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
